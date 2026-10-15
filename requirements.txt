@@ -1,0 +1,40 @@
+# Pulso — dependencias de producción
+#
+# VERIFICADO el 12 de octubre de 2026: las versiones de abajo son las que
+# estaban instaladas y con las que se comprobó que el programa arranca.
+# Entorno de la verificación: Windows 11, Python 3.14.7.
+#
+# Con estas versiones se han ejecutado de verdad y han pasado:
+#   - la API (uvicorn real, peticiones HTTP reales): 6/6 endpoints devuelven 200
+#   - la CLI: --help, estado y ciclo
+#   - `cli ciclo` genera dashboard HTML + informe Markdown + PDF de 2 páginas
+#   - la batería funcional: 9/9
+#   - 15 de las 31 suites de noosfera_project/tests
+#
+# Instalación: python -m pip install -r requirements.txt
+# Usar `python -m pip` y no `pip` a secas: en el entorno del autor `pip`
+# instalaba en otro intérprete que el que ejecutaba `python`.
+#
+# Para pruebas, usar requirements-dev.txt
+
+# API REST y servidor HTTP
+fastapi==0.143.0
+uvicorn==0.54.0
+
+# Interfaz de línea de comandos y salida de consola
+click==8.5.0
+rich==15.0.0
+
+# Lectura de fuentes RSS
+feedparser==6.0.14
+
+# Validación de datos en la API
+pydantic==2.14.1
+
+# Generación de informes PDF
+reportlab==5.0.1
+
+# Empaquetado
+# setuptools NO verificado: no estaba instalado en el entorno de la auditoría,
+# pero es necesario para instalar el proyecto como paquete.
+# setuptools

@@ -1,0 +1,8 @@
+{
+  "pesos": {
+    "coincidencia": 0.45,
+    "recencia": 0.25,
+    "diversidad": 0.15,
+    "longitud": 0.15
+  }
+}

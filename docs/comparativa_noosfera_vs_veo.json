@@ -1,0 +1,26 @@
+{
+  "noosfera": {
+    "existe": true,
+    "archivos_python": 120,
+    "tiene_persistencia": true,
+    "tiene_scoring": true,
+    "tiene_dashboard_oscuro": true,
+    "tiene_pdf_dashboard": true,
+    "tiene_visor_chat": true
+  },
+  "veo": {
+    "existe": false,
+    "archivos_python": 0,
+    "tiene_persistencia": false,
+    "tiene_scoring": false,
+    "tiene_dashboard_oscuro": false,
+    "tiene_pdf_dashboard": false,
+    "tiene_visor_chat": false
+  },
+  "diferencias": 120,
+  "noosfera_gap_oscuro": [
+    "scoring_avanzado",
+    "dashboard_oscuro",
+    "visor_chat"
+  ]
+}

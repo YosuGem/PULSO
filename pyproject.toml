@@ -1,0 +1,35 @@
+# Configuración del paquete PULSO.
+#
+# No se declaran dependencias aquí a propósito: el proyecto se instala con
+# `pip install -r requirements.txt`, que es la vía documentada en el
+# README. Este fichero existe únicamente para registrar el plugin de
+# aislamiento de pruebas.
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulso"
+version = "0.2.1"
+description = "PULSO — radar de senales y analisis de eventos"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# El plugin hace que CUALQUIER ejecución de pytest arranque con la base
+# redirigida a un temporal, incluso si el fichero de prueba vive fuera del
+# árbol del proyecto. Sin él, un test externo escribiría en la base real.
+#
+# Para activarlo hace falta instalar el paquete:
+#     pip install -e .
+# Sin instalarlo, el aislamiento lo siguen dando los dos conftest.py, que
+# cubren los tests que viven dentro del proyecto.
+[project.entry-points.pytest11]
+pulso_aislamiento = "noosfera_project.tests.aislamiento_plugin"
+
+[tool.setuptools]
+packages = ["noosfera_project"]
+
+[tool.pytest.ini_options]
+testpaths = ["noosfera_project/tests"]
+addopts = "-p no:cacheprovider"

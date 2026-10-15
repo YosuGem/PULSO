@@ -1,0 +1,25 @@
+# Pulso — dependencias de desarrollo y pruebas
+#
+# pytest SÍ está instalado y las suites se ejecutaron con él.
+#
+# Resultado real (12 de octubre de 2026, pytest 9.1.1, Windows 11, Python 3.14.7):
+#   - 207 tests individuales aprobados
+#   - 21 de 22 suites de pytest pasan; 1 omitida; 0 fallan
+#   - 8 de 9 suites en forma de script pasan
+#
+# Las dos que no pasan, y por qué (defectos del programa original):
+#   - score_suite.py          -> el rango del score no está definido
+#   - test_export_bitacora.py -> importa una función que no existe
+# Ver INCIDENCIAS.md §4.
+#
+# IMPORTANTE: para ejecutar las suites hay que definir la clave de API,
+# porque la autorización es obligatoria:
+#   export NOOSFERA_API_KEY=noosfera_local_prueba_2026
+# Sin ella las rutas protegidas devuelven 401 y las suites fallan.
+
+-r requirements.txt
+
+pytest
+
+# Para comprobar el estilo del código, opcionalmente:
+# ruff

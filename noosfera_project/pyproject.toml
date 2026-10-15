@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulso"
+version = "0.2.2-dev"
+description = "Toma el pulso a lo que la gente común dice, antes que los medios."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = []
+
+# Extras opcionales: el core es stdlib pura. Se instala lo que se use.
+# Verificado: requests y python-dotenv no se importan en ningún módulo.
+[project.optional-dependencies]
+cli = ["click>=8.1.7"]
+api = ["fastapi>=0.115", "uvicorn>=0.34"]
+rss = ["feedparser>=6.0.11"]
+pdf = ["reportlab>=4.2.5"]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+]
+full = ["pulso[cli,api,rss,pdf,dev]"]
+
+[project.scripts]
+pulso = "noosfera_project.cli:cli"
+pulso-servidor = "noosfera_project.servicios.servidor_api:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["noosfera_project*"]
+
+# La plantilla del dashboard viaja dentro del wheel.
+[tool.setuptools.package-data]
+noosfera_project = ["dashboard/*.html"]
