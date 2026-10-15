@@ -30,8 +30,8 @@ Windows 11 con Python 3.14.7:
   **PDF de 2 páginas**. (Dice que también actualiza el Markdown, pero **no
   genera ningún `.md`** — véase `INCIDENCIAS.md` §10.9.)
 - ✅ **La batería funcional pasa 9 de 9** con datos reales.
-- ✅ **199 tests individuales aprobados** con `pytest`:
-  **21 de 22** suites pasan (1 omitida, 0 fallan) y **8 de 9** suites
+- ✅ **210 tests individuales aprobados** con `pytest`:
+  **22 de 23** suites pasan (1 omitida, 0 fallan) y **8 de 9** suites
   en forma de script pasan.
 - ⚠️ **No se ha verificado** una instalación en un entorno limpio.
 - ⚠️ **No se ha probado** en Linux ni macOS.
@@ -319,7 +319,7 @@ el autor no definió.
 python verificar_pulso.py
 ```
 
-Comprueba, ejecutándolo de verdad: que los 130 módulos compilan, las suites
+Comprueba, ejecutándolo de verdad: que los 137 módulos compilan, las suites
 con `pytest`, las suites en forma de script, la CLI, y que la carpeta está
 limpia y lista para publicar. **También restaura la base de datos a sus
 1.391 eventos**, porque las pruebas escriben en ella al ejecutarse.
@@ -367,21 +367,19 @@ PULSO/
 ├── iniciar_noosfera.bat  comandos_rapidos.sh
 ├── server/health.py
 │
-├── noosfera_project/          ← el paquete (130 módulos .py)
+├── noosfera_project/          ← el paquete (137 módulos .py)
 │   ├── cli.py
 │   ├── servicios/             ← API, dashboard, PDF, persistencia
 │   ├── procesamiento/         ← scoring, idioma, clasificador
 │   ├── deteccion/             ← pipeline, señales, hipótesis
 │   ├── ingesta/               ← RSS y fuentes
 │   ├── descubrimiento/        ← explorador autónomo
-│   ├── tests/                 ← 31 suites
-│   └── eventos.db             ← 1.391 eventos de ejemplo
+│   └── tests/                 ← 31 suites
 │
 ├── docs/                      ← documentación del programa
 ├── dashboard/                 ← dashboard generado
 ├── informes/                  ← informes generados
 ├── datos/  dist/  auditorias/  comparativas/  exportaciones/
-└── noosfera.log
 ```
 
 ---
@@ -772,7 +770,7 @@ behaviour the author never defined.
 python verificar_pulso.py
 ```
 
-It checks, by really running it: that the 130 modules compile, the suites
+It checks, by really running it: that the 137 modules compile, the suites
 with `pytest`, the suites in script form, the CLI, and that the folder is
 clean and ready to publish. **It also restores the database to its 1,391
 events**, because the tests write into it when they run.
@@ -820,21 +818,19 @@ PULSO/
 ├── iniciar_noosfera.bat  comandos_rapidos.sh
 ├── server/health.py
 │
-├── noosfera_project/          ← the package (130 .py modules)
+├── noosfera_project/          ← the package (137 .py modules)
 │   ├── cli.py
 │   ├── servicios/             ← API, dashboard, PDF, persistence
 │   ├── procesamiento/         ← scoring, language, classifier
 │   ├── deteccion/             ← pipeline, signals, hypotheses
 │   ├── ingesta/               ← RSS and sources
 │   ├── descubrimiento/        ← autonomous explorer
-│   ├── tests/                 ← 31 suites
-│   └── eventos.db             ← 1,391 example events
+│   └── tests/                 ← 31 suites
 │
 ├── docs/                      ← program documentation
 ├── dashboard/                 ← generated dashboard
 ├── informes/                  ← generated reports
 ├── datos/  dist/  auditorias/  comparativas/  exportaciones/
-└── noosfera.log
 ```
 
 ---
