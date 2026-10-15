@@ -1,0 +1,43 @@
+Noósfera — informe de eventos emergentes
+Generado: 2026-10-12T16:18:42.064780
+Eventos incluidos: 38
+
+Detalle:
+1. [verificacion_cierre] Prueba de cierre (2026-10-12T00:00:00+00:00) p=0.5
+2. [] Erupción volcánica, alerta sanitaria y desastre en la isla () p=
+3. [] Nuevo descubrimiento modesto sin señales emergentes () p=
+4. [] Crisis económica, protestas y riesgo de recesión global () p=
+5. [prueba] Erupción volcánica, alerta sanitaria y desastre en la isla (2026-06-14T08:00:00) p=
+6. [prueba] Nuevo descubrimiento modesto sin señales emergentes (2026-06-14T09:00:00) p=
+7. [prueba] Crisis económica, protestas y riesgo de recesión global (2026-06-14T10:00:00) p=
+8. [coinmetrics_local] Bitcoin 2026 minimo dolares 42,000 consenso analistas (2026-06-25T02:40:00+00:00) p=0.85
+9. [coindesk_local] precio minimo Bitcoin 2026 en dolares pronostico (2026-06-25T02:10:00+00:00) p=0.9
+10. [cointelegraph_local] precio minimo Bitcoin 2026 en dolares (2026-06-25T02:00:00+00:00) p=0.95
+11. [prueba_bitcoin_real] precio mínimo Bitcoin 2026 en dólares rango 40,000-48,000 (2026-06-25T01:20:00+00:00) p=0.78
+12. [prueba_bitcoin_real] Bitcoin 2026 mínimo en dólares apoyo 42,000 tras halving (2026-06-25T01:15:00+00:00) p=0.8
+13. [prueba_bitcoin_real] Consenso precio mínimo Bitcoin 2026 en dólares CoinDesk (2026-06-25T01:10:00+00:00) p=0.85
+14. [prueba_bitcoin_real] Bitcoin 2026 precio mínimo en dólares proyectado por Bloomberg (2026-06-25T01:05:00+00:00) p=0.88
+15. [prueba_bitcoin_real] precio mínimo Bitcoin 2026 en dólares según analistas (2026-06-25T01:00:00+00:00) p=0.9
+16. [prueba_variada_local] Prueba temática ampliada: Ciencia (2026-06-24T19:55:37.536900+00:00) p=0.6
+17. [prueba_variada_local] Prueba temática ampliada: Educación (2026-06-24T19:55:37.536900+00:00) p=0.6
+18. [prueba_variada_local] Prueba temática ampliada: Cultura (2026-06-24T19:55:37.536900+00:00) p=0.6
+19. [prueba_variada_local] Prueba temática ampliada: Salud pública (2026-06-24T19:55:37.536900+00:00) p=0.6
+20. [prueba_variada_local] Prueba temática ampliada: Cambio climático (2026-06-24T19:55:37.536900+00:00) p=0.6
+21. [prueba_variada_local] Prueba temática ampliada: Tecnología (2026-06-24T19:55:37.536900+00:00) p=0.6
+22. [prueba_variada_local] Prueba temática ampliada: Política internacional (2026-06-24T19:55:37.536900+00:00) p=0.6
+23. [prueba_variada_local] Prueba temática ampliada: Conflictos y seguridad (2026-06-24T19:55:37.536900+00:00) p=0.6
+24. [prueba_variada_local] Prueba temática ampliada: Deportes (2026-06-24T19:55:37.536900+00:00) p=0.6
+25. [prueba_variada_local] Prueba temática ampliada: Economía y mercados (2026-06-24T19:55:37.536900+00:00) p=0.6
+26. [prueba_deportiva_local] Mundial 2026: predicciones de expertos (2026-06-24T18:39:58.691150+00:00) p=0.8
+27. [prueba_deportiva_local] Mundial 2026:Fixture completo (2026-06-24T18:39:58.691150+00:00) p=0.8
+28. [prueba_deportiva_local] Mundial 2026: lesiones clave (2026-06-24T18:39:58.691150+00:00) p=0.8
+29. [prueba_deportiva_local] Mundial 2026: Ranking FIFA actualizado (2026-06-24T18:39:58.691150+00:00) p=0.8
+30. [prueba_deportiva_local] Mundial 2026: sedes confirmadas (2026-06-24T18:39:58.691150+00:00) p=0.8
+31. [prueba_deportiva_local] Eliminatorias UEFA: España y Portugal avanzan (2026-06-24T18:39:58.691150+00:00) p=0.8
+32. [prueba_deportiva_local] Eliminatorias CONCACAF: México clasifica (2026-06-24T18:39:58.691150+00:00) p=0.8
+33. [prueba_deportiva_local] Mundial 2026: Argentina defiende título (2026-06-24T18:39:58.691150+00:00) p=0.8
+34. [prueba_deportiva_local] Mundial 2026: Francia en cuadrangular de favoritos (2026-06-24T18:39:58.691150+00:00) p=0.8
+35. [prueba_deportiva_local] Mundial 2026: Brasil favorito según apuestas (2026-06-24T18:39:58.691150+00:00) p=0.8
+36. [prueba_real_local] Prueba real temática: Conflictos y seguridad (2026-06-24T17:51:03.318445+00:00) p=0.5
+37. [prueba_real_local] Prueba real temática: Deportes (2026-06-24T17:51:03.318445+00:00) p=0.5
+38. [prueba_real_local] Prueba real temática: Economía y mercados (2026-06-24T17:51:03.318445+00:00) p=0.5

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noósfera — informe</title>
+
+<style>
+:root{--bg:#000000;--panel:#0b0b0b;--text:#ffffff;--muted:#dcdcdc;--accent:#ffd54a;--border:#3a3a3a;--focus:#ffd54a;}
+  *{box-sizing:border-box}
+  html{font-size:18px}
+  html,body{margin:0;background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    line-height:1.7}
+  a{color:#9ecbff}
+  a:focus,button:focus,[tabindex]:focus{outline:3px solid var(--focus);outline-offset:2px}
+  .meta,.row,.chip,.link,.pred,.footer,.role{font-size:18px}
+  h1{font-size:32px} h2{font-size:24px}
+import logging
+  html,body{background:#050505;color:#ececec;font-family:Segoe UI,Roboto,Ubuntu,sans-serif;line-height:1.6;}
+header{border-bottom:1px solid var(--border);padding:18px 12px;background:#080808;}
+h1{margin:0;font-size:26px;letter-spacing:1px;}
+.meta{color:var(--muted);font-size:18px;margin-top:4px;}
+section{padding:14px 12px 20px;max-width:1100px;margin:0 auto;}
+article{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin:10px 0;}
+.titulo{font-size:18px;font-weight:700;}
+.titulo a{color:var(--text);text-decoration:none;}
+.titulo a:hover{color:var(--accent);}
+.fila{display:flex;flex-wrap:wrap;gap:8px 14px;color:var(--muted);font-size:18px;}
+.chip{background:#0f0f0f;border:1px solid #1a1a1a;border-radius:999px;padding:3px 9px;color:#c8c8c8;font-size:18px;}
+a{word-break:break-all;}
+.resumen{margin-top:6px;font-size:18px;color:#c6c6c6;}
+.estadistica{display:inline-block;background:#0b0b0b;border:1px solid #1c1c1c;border-radius:12px;padding:10px 12px;margin:6px 6px 0 0;min-width:110px;color:#cfcfcf;font-size:18px;}
+.estadistica b{display:block;font-size:20px;color:#ffd54a;}
+.predicciones{padding:14px 12px 20px;max-width:1100px;margin:0 auto;}
+.prediccion-item{background:#0b0b0b;border:1px solid #1c1c1c;border-radius:10px;padding:8px 12px;margin:6px 0;color:#cfcfcf;font-size:18px;}
+</style>
+
+<header>
+  <h1>Noósfera</h1>
+  <div class="meta">Actualizado: 2026-10-13T04:02:28.500548 · Modo alto contraste</div>
+</header>
+<section>
+  <div><div class="estadistica"><b>80</b>Total</div>
+<div class="estadistica"><b>0</b>Alto</div>
+<div class="estadistica"><b>0</b>Medio</div>
+<div class="estadistica"><b>80</b>Bajo</div></div>
+</section>
+<section class="predicciones">
+  <div class="resumen"><b>Predicciones del sistema</b></div>
+  <p class='prediccion-item'>Ataque a Irán (2026) (182 apariciones) — Alta probabilidad de repetición en: Ataque a Irán (2026)</p>
+<p class='prediccion-item'>Precios, comisiones y tasas (180 apariciones) — Alta probabilidad de repetición en: Precios, comisiones y tasas</p>
+<p class='prediccion-item'>Petróleo y gasolina (94 apariciones) — Alta probabilidad de repetición en: Petróleo y gasolina</p>
+<p class='prediccion-item'>United States International Relations (81 apariciones) — Alta probabilidad de repetición en: United States International Relations</p>
+<p class='prediccion-item'>Great Britain Withdrawal from EU (Brexit) (55 apariciones) — Alta probabilidad de repetición en: Great Britain Withdrawal from EU (Brexit)</p>
+<p class='prediccion-item'>Workplace Environment (? apariciones) — Primer evento registrado de: Workplace Environment</p>
+<p class='prediccion-item'>Workplace Hazards and Violations (? apariciones) — Primer evento registrado de: Workplace Hazards and Violations</p>
+<p class='prediccion-item'>Ataque a Irán (2026) y Petróleo y gasolina aparecen juntas con frecuencia (75 veces)</p>
+<p class='prediccion-item'>Ataque a Irán (2026) y Precios, comisiones y tasas aparecen juntas con frecuencia (66 veces)</p>
+</section>
+<main>
+  <article>
+  <p class="titulo"><a href="#" target="_blank" rel="noopener">Erupción volcánica, alerta sanitaria y desastre en la isla</a></p>
+  <div class="fila">
+    <span class="chip"></span>
+    <span class="chip"></span>
+    <span class="chip">geofisica</span><span class="chip">salud</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="#" target="_blank" rel="noopener">Nuevo descubrimiento modesto sin señales emergentes</a></p>
+  <div class="fila">
+    <span class="chip"></span>
+    <span class="chip"></span>
+    <span class="chip">ciencia</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="#" target="_blank" rel="noopener">Crisis económica, protestas y riesgo de recesión global</a></p>
+  <div class="fila">
+    <span class="chip"></span>
+    <span class="chip"></span>
+    <span class="chip">economia</span><span class="chip">protesta</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://prueba.local/erupcion" target="_blank" rel="noopener">Erupción volcánica, alerta sanitaria y desastre en la isla</a></p>
+  <div class="fila">
+    <span class="chip">prueba</span>
+    <span class="chip">2026-06-14T08:00:00</span>
+    <span class="chip">geofisica</span><span class="chip">salud</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://prueba.local/ciencia" target="_blank" rel="noopener">Nuevo descubrimiento modesto sin señales emergentes</a></p>
+  <div class="fila">
+    <span class="chip">prueba</span>
+    <span class="chip">2026-06-14T09:00:00</span>
+    <span class="chip">ciencia</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://prueba.local/crisis" target="_blank" rel="noopener">Crisis económica, protestas y riesgo de recesión global</a></p>
+  <div class="fila">
+    <span class="chip">prueba</span>
+    <span class="chip">2026-06-14T10:00:00</span>
+    <span class="chip">economia</span><span class="chip">protesta</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" target="_blank" rel="noopener">Feed objetivo: https://rss.nytimes.com/services/xml/rss/nyt/World.xml</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip"></span>
+    <span class="chip">objetivo</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://feeds.bbci.co.uk/news/world/rss.xml" target="_blank" rel="noopener">Feed objetivo: https://feeds.bbci.co.uk/news/world/rss.xml</a></p>
+  <div class="fila">
+    <span class="chip">https://feeds.bbci.co.uk/news/world/rss.xml</span>
+    <span class="chip"></span>
+    <span class="chip">objetivo</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin/coinmetrics" target="_blank" rel="noopener">Bitcoin 2026 minimo dolares 42,000 consenso analistas</a></p>
+  <div class="fila">
+    <span class="chip">coinmetrics_local</span>
+    <span class="chip">2026-06-25T02:40:00+00:00</span>
+    <span class="chip">Bitcoin</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin/reuters" target="_blank" rel="noopener">precio minimo Bitcoin 2026 en dolares Reuters 40,000-48,000</a></p>
+  <div class="fila">
+    <span class="chip">reuters_local</span>
+    <span class="chip">2026-06-25T02:30:00+00:00</span>
+    <span class="chip">Economía y mercados</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin/bloomberg" target="_blank" rel="noopener">Bitcoin 2026 precio minimo en dolares segun Bloomberg</a></p>
+  <div class="fila">
+    <span class="chip">bloomberg_local</span>
+    <span class="chip">2026-06-25T02:20:00+00:00</span>
+    <span class="chip">Economía</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin/coindesk" target="_blank" rel="noopener">precio minimo Bitcoin 2026 en dolares pronostico</a></p>
+  <div class="fila">
+    <span class="chip">coindesk_local</span>
+    <span class="chip">2026-06-25T02:10:00+00:00</span>
+    <span class="chip">Economía y mercados</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin/cointelegraph" target="_blank" rel="noopener">precio minimo Bitcoin 2026 en dolares</a></p>
+  <div class="fila">
+    <span class="chip">cointelegraph_local</span>
+    <span class="chip">2026-06-25T02:00:00+00:00</span>
+    <span class="chip">Bitcoin</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin" target="_blank" rel="noopener">precio mínimo Bitcoin 2026 en dólares rango 40,000-48,000</a></p>
+  <div class="fila">
+    <span class="chip">prueba_bitcoin_real</span>
+    <span class="chip">2026-06-25T01:20:00+00:00</span>
+    <span class="chip">Economía y mercados</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin" target="_blank" rel="noopener">Bitcoin 2026 mínimo en dólares apoyo 42,000 tras halving</a></p>
+  <div class="fila">
+    <span class="chip">prueba_bitcoin_real</span>
+    <span class="chip">2026-06-25T01:15:00+00:00</span>
+    <span class="chip">Bitcoin</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin" target="_blank" rel="noopener">Consenso precio mínimo Bitcoin 2026 en dólares CoinDesk</a></p>
+  <div class="fila">
+    <span class="chip">prueba_bitcoin_real</span>
+    <span class="chip">2026-06-25T01:10:00+00:00</span>
+    <span class="chip">Bitcoin</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin" target="_blank" rel="noopener">Bitcoin 2026 precio mínimo en dólares proyectado por Bloomberg</a></p>
+  <div class="fila">
+    <span class="chip">prueba_bitcoin_real</span>
+    <span class="chip">2026-06-25T01:05:00+00:00</span>
+    <span class="chip">Economía</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://bitcoin" target="_blank" rel="noopener">precio mínimo Bitcoin 2026 en dólares según analistas</a></p>
+  <div class="fila">
+    <span class="chip">prueba_bitcoin_real</span>
+    <span class="chip">2026-06-25T01:00:00+00:00</span>
+    <span class="chip">Economía y mercados</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Ciencia</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Ciencia</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Educación</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Educación</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Cultura</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Cultura</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Salud pública</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Salud pública</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Cambio climático</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Cambio climático</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Tecnología</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Tecnología</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Política internacional</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Política internacional</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Conflictos y seguridad</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Conflictos y seguridad</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Deportes</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_variada" target="_blank" rel="noopener">Prueba temática ampliada: Economía y mercados</a></p>
+  <div class="fila">
+    <span class="chip">prueba_variada_local</span>
+    <span class="chip">2026-06-24T19:55:37.536900+00:00</span>
+    <span class="chip">Economía y mercados</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: predicciones de expertos</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026:Fixture completo</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: lesiones clave</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: Ranking FIFA actualizado</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: sedes confirmadas</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Eliminatorias UEFA: España y Portugal avanzan</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Eliminatorias CONCACAF: México clasifica</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: Argentina defiende título</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: Francia en cuadrangular de favoritos</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_deportiva" target="_blank" rel="noopener">Mundial 2026: Brasil favorito según apuestas</a></p>
+  <div class="fila">
+    <span class="chip">prueba_deportiva_local</span>
+    <span class="chip">2026-06-24T18:39:58.691150+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_real" target="_blank" rel="noopener">Prueba real temática: Conflictos y seguridad</a></p>
+  <div class="fila">
+    <span class="chip">prueba_real_local</span>
+    <span class="chip">2026-06-24T17:51:03.318445+00:00</span>
+    <span class="chip">Conflictos y seguridad</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_real" target="_blank" rel="noopener">Prueba real temática: Deportes</a></p>
+  <div class="fila">
+    <span class="chip">prueba_real_local</span>
+    <span class="chip">2026-06-24T17:51:03.318445+00:00</span>
+    <span class="chip">Deportes</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="local://prueba_real" target="_blank" rel="noopener">Prueba real temática: Economía y mercados</a></p>
+  <div class="fila">
+    <span class="chip">prueba_real_local</span>
+    <span class="chip">2026-06-24T17:51:03.318445+00:00</span>
+    <span class="chip">Economía y mercados</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/china-rare-earths.html" target="_blank" rel="noopener">China Tightens Rare-Earth Grip on U.S. Firms, Threatening Trade Clash</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T13:34:01</span>
+    <span class="chip">China</span><span class="chip">United States</span><span class="chip">Rare Earths</span><span class="chip">Magnets and Magnetism</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/dealbook/china-closing-ai-gap.html" target="_blank" rel="noopener">Is China Closing the A.I. Gap Faster Than Expected?</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T15:06:31</span>
+    <span class="chip">internal-storyline-no</span><span class="chip">DeepSeek Artificial Intelligence Co Ltd</span><span class="chip">Artificial Intelligence</span><span class="chip">Microsoft Corp</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/energy-environment/iran-war-us-oil-companies.html" target="_blank" rel="noopener">U.S. Oil Is Skipping the Chance to Grab Market Share From the Gulf</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T14:14:10</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Oil (Petroleum) and Gasoline</span><span class="chip">Production</span><span class="chip">Prices (Fares</span><span class="chip"> Fees and Rates)</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/starmer-burnham-chancellor.html" target="_blank" rel="noopener">U.K. Markets React Calmly to Starmer Resignation, but Economic Uncertainties Linger</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T17:48:26</span>
+    <span class="chip">Burnham</span><span class="chip"> Andrew M (1970- )</span><span class="chip">Starmer</span><span class="chip"> Keir</span><span class="chip">Reeves</span><span class="chip"> Rachel (1979- )</span><span class="chip">Stocks and Bonds</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/media/the-view-fcc-abc-investigation.html" target="_blank" rel="noopener">‘The View’ Asks Its Audience for Help in Battle With F.C.C.</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T03:41:01</span>
+    <span class="chip">Federal Communications Commission</span><span class="chip">The View (TV Program)</span><span class="chip">Television</span><span class="chip">Freedom of Speech and Expression</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/arts/music/clive-davis-dead.html" target="_blank" rel="noopener">Clive Davis, Music Industry Titan Who Signed Whitney Houston, Dies at 94</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T20:21:15</span>
+    <span class="chip">Davis</span><span class="chip"> Clive</span><span class="chip">Music</span><span class="chip">Columbia Records</span><span class="chip">J Records</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/media/youtube-hollywood-creative-artists-agency.html" target="_blank" rel="noopener">YouTube Stars Take Center Stage at Creative Artists Agency</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T18:37:40</span>
+    <span class="chip">Video Recordings</span><span class="chip"> Downloads and Streaming</span><span class="chip">Agents (Business)</span><span class="chip">Movies</span><span class="chip">Television</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/warsh-greenspan-federal-reserve.html" target="_blank" rel="noopener">In Alan Greenspan, Kevin Warsh Saw a Fed Chairman Role Model</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T17:42:31</span>
+    <span class="chip">Warsh</span><span class="chip"> Kevin M</span><span class="chip">Greenspan</span><span class="chip"> Alan</span><span class="chip">Federal Reserve System</span><span class="chip">Banking and Financial Institutions</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/media/hot-ones-sean-evans-netflix.html" target="_blank" rel="noopener">Netflix Buys a ‘Hot Ones’ Spinoff</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-22T19:00:06</span>
+    <span class="chip">Television</span><span class="chip">Video Recordings</span><span class="chip"> Downloads and Streaming</span><span class="chip">Podcasts</span><span class="chip">Hot Ones: Extra Heat (TV Program)</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/business/tesla-texas-autopilot-crash-nhtsa.html" target="_blank" rel="noopener">Tesla Crash That Killed a Texas Woman Will be Investigated by Federal Regulators</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T15:11:36</span>
+    <span class="chip">Driverless and Semiautonomous Vehicles</span><span class="chip">Electric and Hybrid Vehicles</span><span class="chip">Automobiles</span><span class="chip">Traffic Accidents and Safety</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/brexit-uk-economy.html" target="_blank" rel="noopener">Brexit Has Cost the UK Growth, Analysts Say, in the Decade Since the Vote</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T12:42:18</span>
+    <span class="chip">Great Britain Withdrawal from EU (Brexit)</span><span class="chip">Economic Conditions and Trends</span><span class="chip">International Trade and World Market</span><span class="chip">Gross Domestic Product</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/europe/uk-brexit-seasonal-farm-workers-central-asia.html" target="_blank" rel="noopener">Those British Strawberries Are Being Picked by Central Asian Workers</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T10:16:21</span>
+    <span class="chip">Migrant Labor (Agriculture)</span><span class="chip">Agriculture and Farming</span><span class="chip">Foreign Workers</span><span class="chip">Great Britain Withdrawal from EU (Brexit)</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/economy/china-megafactory-us-tech-race.html" target="_blank" rel="noopener">As Chinese Tech Pulls Ahead, U.S. Fears It Will Become Dependent</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T17:53:47</span>
+    <span class="chip">Factories and Manufacturing</span><span class="chip">United States International Relations</span><span class="chip">Communist Party of China</span><span class="chip">Contemporary Amperex Technology Ltd</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/economy/gasoline-demand-destruction.html" target="_blank" rel="noopener">America’s Thirst for Gasoline May Not Recover After Iran War</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T09:01:19</span>
+    <span class="chip">Prices (Fares</span><span class="chip"> Fees and Rates)</span><span class="chip">United States Politics and Government</span><span class="chip">Oil (Petroleum) and Gasoline</span><span class="chip">US and Israeli Attack on Iran (2026)</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/travel/boutique-hotels.html" target="_blank" rel="noopener">From Florence to Malta, 5 New Boutique Hotels</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T09:01:37</span>
+    <span class="chip">Hotels and Travel Lodgings</span><span class="chip">Travel and Vacations</span><span class="chip">World Heritage Sites</span><span class="chip">Content Type: Service</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/technology/china-supercomputer-crown-us.html" target="_blank" rel="noopener">China Takes Supercomputer Crown From U.S. For First Time Since 2017</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T09:02:27</span>
+    <span class="chip">Artificial Intelligence</span><span class="chip">Supercomputers</span><span class="chip">Computer Chips</span><span class="chip">International Relations</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/stock-market-down-tech-ai-asia-sp500-oil-gas.html" target="_blank" rel="noopener">Markets Recoil in Global Sell-Off Driven by Tech Stocks</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T13:48:03</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Oil (Petroleum) and Gasoline</span><span class="chip">Prices (Fares</span><span class="chip"> Fees and Rates)</span><span class="chip">Stocks and Bonds</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/dealbook/tech-stocks-chips-spacex.html" target="_blank" rel="noopener">The Tech Sell-off Goes Global</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T11:56:45</span>
+    <span class="chip">internal-storyline-no</span><span class="chip">Kospi Stock Index (South Korea)</span><span class="chip">Space Exploration Technologies Corp</span><span class="chip">Musk</span><span class="chip"> Elon</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/iran-strait-hormuz-oil-shipping-traffic.html" target="_blank" rel="noopener">Strait Reopens and Iranian Oil Flows, But the Path Through Is Complicated</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T18:43:33</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Ships and Shipping</span><span class="chip">Roads and Traffic</span><span class="chip">United States International Relations</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/us/skin-substitutes-medicare-fraud.html" target="_blank" rel="noopener">Ferraris and Shell Companies: Five Charged in Medicare Fraud Schemes</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T15:40:24</span>
+    <span class="chip">Medicare</span><span class="chip">Frauds and Swindling</span><span class="chip">Bribery and Kickbacks</span><span class="chip">Skin</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/iran-war-africa-farming.html" target="_blank" rel="noopener">The Iran War’s Persistent Threat to Farmers in Poor Countries</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T17:59:14</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Ivory Coast</span><span class="chip">Cocoa</span><span class="chip">Agriculture and Farming</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/media/cbs-news-ombudsman.html" target="_blank" rel="noopener">CBS News’s Independent Watchdog Stays Quiet Amid ‘60 Minutes’ Turmoil</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T18:54:46</span>
+    <span class="chip">News and News Media</span><span class="chip">Appointments and Executive Changes</span><span class="chip">Ethics and Official Misconduct</span><span class="chip">Mergers</span><span class="chip"> Acquisitions and Divestitures</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/economy/teamsters-justice-sean-obrien.html" target="_blank" rel="noopener">Trump Gives Teamsters a Chance to Shed Oversight Meant to Curb Mob Ties</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T19:29:07</span>
+    <span class="chip">Organized Labor</span><span class="chip">United States Politics and Government</span><span class="chip">Embezzlement</span><span class="chip">Collective Bargaining</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/after-blockbuster-ipo-spacex-shares-are-slumping.html" target="_blank" rel="noopener">SpaceX Stock Price Is Slumping After Its Blockbuster IPO</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T18:05:52</span>
+    <span class="chip">Initial Public Offerings</span><span class="chip">Stocks and Bonds</span><span class="chip">Artificial Intelligence</span><span class="chip">Space Exploration Technologies Corp</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/apple-union-store-closure.html" target="_blank" rel="noopener">Apple Just Closed Its First Unionized U.S. Store</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/Business.xml</span>
+    <span class="chip">2026-06-23T18:53:22</span>
+    <span class="chip">Apple Inc</span><span class="chip">Shopping and Retail</span><span class="chip">Organized Labor</span><span class="chip">Maryland</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/22/world/middleeast/iran-world-cup-locker-room-note.html" target="_blank" rel="noopener">Iran Team Leaves Locker Room Note: The ‘Spirit of Iran Remains Alive and Steadfast’</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-22T22:47:27</span>
+    <span class="chip">Soccer</span><span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">World Cup 2026 (Soccer)</span><span class="chip">Iranian-Americans</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/technology/china-supercomputer-crown-us.html" target="_blank" rel="noopener">China Takes Supercomputer Crown From U.S. For First Time Since 2017</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T09:02:27</span>
+    <span class="chip">Artificial Intelligence</span><span class="chip">Supercomputers</span><span class="chip">Computer Chips</span><span class="chip">International Relations</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/live/2026/06/23/world/iran-us-trump-lebanon/heres-the-latest" target="_blank" rel="noopener">Here’s the latest.</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T19:54:23</span>
+    
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/asia/japan-visa-fee-increase-tourism.html" target="_blank" rel="noopener">Japan to Raise Some Tourist Visa Fees More Than 400 Percent</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T10:43:45</span>
+    <span class="chip">Prices (Fares</span><span class="chip"> Fees and Rates)</span><span class="chip">Travel and Vacations</span><span class="chip">Visas</span><span class="chip">Liberal Democratic Party (Japan)</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/europe/heat-wave-france-drowning-deaths.html" target="_blank" rel="noopener">40 People Drown in France Amid Scorching Temperatures</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T14:29:04</span>
+    <span class="chip">Heat and Heat Waves</span><span class="chip">Drownings</span><span class="chip">France</span><span class="chip">Lecornu</span><span class="chip"> Sebastien</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/middleeast/diverging-accounts-iran-nuclear-inspections.html" target="_blank" rel="noopener">U.S. and Iran’s Conflicting Claims on Nuclear Inspection Show Challenge Ahead</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T14:33:59</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Iran-Israel War (2025- )</span><span class="chip">Nuclear Weapons</span><span class="chip">Uranium</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/business/iran-war-africa-farming.html" target="_blank" rel="noopener">The Iran War’s Persistent Threat to Farmers in Poor Countries</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T17:59:14</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Ivory Coast</span><span class="chip">Cocoa</span><span class="chip">Agriculture and Farming</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/middleeast/israel-soldiers-lebanon-shooting-hezbollah.html" target="_blank" rel="noopener">Israeli Soldiers Fatally Shoot 2 People in Southern Lebanon, Health Officials Say</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T15:11:37</span>
+    <span class="chip">War and Armed Conflicts</span><span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Hezbollah</span><span class="chip">Israel</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/arts/churchill-bengal-famine-national-portrait-gallery.html" target="_blank" rel="noopener">Artist Pulls Work From London Museum After Clash Over Churchill’s Legacy</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T16:42:38</span>
+    <span class="chip">Art</span><span class="chip">Museums</span><span class="chip">Cammock</span><span class="chip"> Helen (1970- )</span><span class="chip">Churchill</span><span class="chip"> Winston Leonard Spencer</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/middleeast/imo-persian-gulf-stranded-ships.html" target="_blank" rel="noopener">U.N. Sets Plan to Evacuate Stranded Ships Out of Persian Gulf</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T17:25:01</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Ships and Shipping</span><span class="chip">International Maritime Organization</span><span class="chip">United Nations</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/middleeast/rubio-strait-of-hormuz-charges-traffic.html" target="_blank" rel="noopener">In Middle East, Rubio Says ‘No Country’ Can Charge for Hormuz Traffic</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T19:18:59</span>
+    <span class="chip">US and Israeli Attack on Iran (2026)</span><span class="chip">Peace Process</span><span class="chip">Ships and Shipping</span><span class="chip">Hezbollah</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/middleeast/un-report-israel-palestinian-children.html" target="_blank" rel="noopener">U.N. Report Says Israeli Killings of Gaza Children Post-Truce Amount to Genocide</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T19:51:51</span>
+    <span class="chip">Defense and Military Forces</span><span class="chip">Civilian Casualties</span><span class="chip">War Crimes</span><span class="chip"> Genocide and Crimes Against Humanity</span><span class="chip">Israel-Gaza War (2023- )</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/europe/world-cup-jordan-palestinians.html" target="_blank" rel="noopener">At World Cup Soccer Game, Palestinian Emblems Abound</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T06:27:37</span>
+    <span class="chip">Palestinians</span><span class="chip">Soccer</span><span class="chip">World Cup 2026 (Soccer)</span><span class="chip">Flags</span><span class="chip"> Emblems and Insignia</span>
+  </div>
+</article>
+
+<article>
+  <p class="titulo"><a href="https://www.nytimes.com/2026/06/23/world/middleeast/iranian-singer-lashing-sentence.html" target="_blank" rel="noopener">Iranian Singer Sentenced to 74 Lashes for Performing Without Hijab</a></p>
+  <div class="fila">
+    <span class="chip">https://rss.nytimes.com/services/xml/rss/nyt/World.xml</span>
+    <span class="chip">2026-06-23T19:52:15</span>
+    <span class="chip">Iran</span><span class="chip">Corporal Punishment</span><span class="chip">Muslim Veiling</span><span class="chip">Decisions and Verdicts</span>
+  </div>
+</article>
+
+</main>
+  <script>
+(function(){
+  var b=document.createElement('button');
+  b.textContent='Cambiar tema';
+  b.style.cssText='position:fixed;top:8px;right:8px;z-index:99;padding:10px 16px;'
+    +'font-size:18px;cursor:pointer;background:var(--panel);color:var(--text);'
+    +'border:2px solid var(--border);border-radius:8px';
+  b.onclick=function(){
+    var claro=document.documentElement.classList.toggle('tema-claro');
+    try{localStorage.setItem('noosfera_tema', claro?'claro':'oscuro')}catch(e){}
+  };
+  document.body.appendChild(b);
+  try{
+    if(localStorage.getItem('noosfera_tema')==='claro'){
+      document.documentElement.classList.add('tema-claro');
+    }
+  }catch(e){}
+})();
+</script>
